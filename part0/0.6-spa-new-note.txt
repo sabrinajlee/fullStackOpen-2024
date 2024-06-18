@@ -1,0 +1,20 @@
+```mermaid
+sequenceDiagram
+	participant browser
+	participant server
+	
+	Note over browser: User enters form data and presses submit button.
+	end note
+	Note over browser: Browser prevents the default handling of the form 
+	submit
+	end note
+	Note over browser: Browser creates new note object and pushes it to 
+	the array of notes. The list of notes is rerendered and the new note 
+	is sent to the server.
+	end note
+	browser->>+server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
+	Note over server: server creates new note object containing data from 
+	the received req object and pushes it to the array of notes.
+	end note
+	server-->>-browser: Received JSON data and created new note. 
+```
