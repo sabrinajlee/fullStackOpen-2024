@@ -26,7 +26,7 @@ The course covers the following topics:
    ```bash
    git clone https://github.com/yourusername/fullstackopen-2024.git
    cd fullstackopen-2024
-2. Navigate to the desired part/exercise and follow the instructions in the corresponding README or exercise files.
+2. Navigate to the desired part/exercise. Check out the FSO site to read what each exercise required!
 
 
 ## Prerequisites
